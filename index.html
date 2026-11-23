@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <!-- ================= Google Tag Manager ================= -->
+  <!-- Thay ID GTM-XXXXXXX của bạn vào đây -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <!-- ================= End Google Tag Manager ================= -->
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <title>Đăng Nhập NOVA - Hướng Dẫn Đăng Ký, Đăng Nhập & Tải App NOVA Chính Thức</title>
+  <meta name="description" content="Trang hướng dẫn chi tiết thao tác tại NOVA: Đăng ký tài khoản NOVA, Đăng nhập NOVA, Nạp tiền, Rút tiền và Tải App Mobile nhanh chóng, an toàn tuyệt đối." />
+  <meta name="keywords" content="NOVA, đăng ký NOVA, đăng nhập NOVA, tải app NOVA, link vào NOVA, nap tien NOVA, rut tien NOVA" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nova.com/huong-dan" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nova.com/huong-dan" />
+  <meta property="og:title" content="Trung Tâm Hướng Dẫn NOVA Chính Thức" />
+  <meta property="og:description" content="Hướng dẫn chi tiết từng bước Đăng ký & Đăng nhập dịch vụ tại NOVA. Trải nghiệm giải trí đỉnh cao!" />
+  <meta property="og:image" content="/images/dang-ky-nova-banner.webp" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/images/nova-logo.png" type="image/x-icon" sizes="192x192" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            nova: {
+              DEFAULT: '#7e22ce', /* Tím chủ đạo */
+              hover: '#6b21a8',
+              dark: '#1e1b4b', /* Xanh Blue Galaxy */
+              light: '#f3e8ff',
+              accent: '#3b82f6' /* Xanh dương điểm nhấn */
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Swiper.js CSS (Dùng cho Banner Slider) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    /* Custom Marquee Animation */
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .animate-marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 25s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+
+    /* Custom Transitions for Tab Switch */
+    .tab-panel {
+      transition: opacity 0.3s ease-in-out;
+    }
+  </style>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Trung tâm hướng dẫn NOVA",
+    "description": "Hướng dẫn đăng ký NOVA, đăng nhập NOVA, nạp tiền và tải app NOVA",
+    "publisher": {
+      "@type": "Organization",
+      "name": "NOVA",
+      "logo": "/images/nova-logo.png"
+    }
+  }
+  </script>
+</head>
+
+<body class="min-h-screen w-full bg-slate-100 text-gray-800 antialiased selection:bg-nova selection:text-white">
+
+  <!-- ================= Google Tag Manager (noscript) ================= -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- ================= End Google Tag Manager (noscript) ================= -->
+
+  <!-- ================= HEADER SECTION ================= -->
+  <header class="w-full min-h-[63px] lg:min-h-[83px] bg-white flex items-center justify-center h-16 relative shadow-sm sticky top-0 z-50">
+    <!-- Mobile Home Button -->
+    <a class="absolute left-4 block md:hidden text-nova text-2xl p-2 hover:opacity-80 transition" href="https://nova.com/trangchu" aria-label="Trang chủ NOVA">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    </a>
+
+    <!-- Desktop Home Button -->
+    <a class="hidden md:block group md:absolute left-12" href="https://nova.com/" title="Về trang chủ NOVA">
+      <button class="hover:scale-105 cursor-pointer group-hover:bg-gradient-to-r from-nova to-nova-dark transition-all duration-300 border-2 border-nova rounded-full px-4 py-1.5 flex items-center gap-2">
+        <span class="text-nova group-hover:text-white transition-all duration-300 text-base font-bold">Trang chủ NOVA</span>
+      </button>
+    </a>
+
+    <!-- Logo NOVA -->
+    <div class="flex justify-center items-center p-2 max-w-[160px]">
+      <a href="/" title="NOVA Official Home">
+        <img src="/images/nova-logo.png" alt="NOVA Logo Chính Thức" class="h-10 w-auto object-contain" width="300" height="80" />
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO BANNER SLIDER ================= -->
+    <section class="w-full overflow-hidden bg-nova-dark" aria-label="Banner quảng cáo NOVA">
+      <div class="swiper main-swiper w-full">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="hidden md:block w-full">
+              <img alt="NOVA Banner Khuyến Mãi Desktop 1" width="1920" height="400" loading="eager" class="w-full h-auto object-cover" src="/images/dang-ky-nova-banner.webp" />
+            </div>
+            <div class="block md:hidden w-full">
+              <img alt="NOVA Banner Mobile 1" width="600" height="300" loading="eager" class="w-full h-auto object-cover" src="/images/dang-ky-nova-banner.webp" />
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="hidden md:block w-full">
+              <img alt="NOVA Banner Đăng Ký Desktop 2" width="1920" height="400" loading="lazy" class="w-full h-auto object-cover" src="/images/dang-ky-nova.webp" />
+            </div>
+            <div class="block md:hidden w-full">
+              <img alt="NOVA Banner Mobile 2" width="600" height="300" loading="lazy" class="w-full h-auto object-cover" src="/banner/banner-mobile2.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- ================= ANNOUNCEMENT MARQUEE BAR ================= -->
+    <div class="w-full bg-gradient-to-r from-nova to-nova-dark text-white h-10 md:h-12 flex items-center px-4 overflow-hidden shadow-inner">
+      <span class="flex items-center mr-3 shrink-0 bg-white/20 p-1 rounded-full" aria-label="Thông báo NOVA">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+      </span>
+      
+      <div class="flex-1 min-w-0 overflow-hidden relative" aria-label="Thanh thông báo chạy chữ">
+        <div class="animate-marquee font-semibold text-xs md:text-sm tracking-wide">
+          <span class="mx-6">✅ LINK CHÍNH THỨC TRUY CẬP NOVA: <strong class="underline">NOVA.COM</strong> | <strong class="underline">NOVA.VIP</strong></span>
+          <span class="mx-6">💥 ĐĂNG KÝ NOVA TẶNG NGAY ƯU ĐÃI KHỦNG DÀNH CHO THÀNH VIÊN MỚI!</span>
+          <span class="mx-6">🔥 ĐĂNG NHẬP NOVA MỖI NGÀY ĐỂ NHẬN HỒNG BAO HÀNG NGÀN TỶ ĐỒNG.</span>
+          <span class="mx-6">⚡ HỆ THỐNG NẠP RÚT BLUE GALAXY SIÊU TỐC - BẢO MẬT TUYỆT ĐỐI - CSKH 24/7.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= MAIN CONTENT WRAPPER ================= -->
+    <div class="w-full bg-slate-50 min-h-screen flex justify-center py-4 md:py-8 px-3 md:px-12 bg-cover bg-center bg-no-repeat" style="background-image: url('/bg-main.svg');">
+      <div class="max-w-[1440px] w-full flex flex-col lg:flex-row gap-6">
+
+        <!-- ===== SIDEBAR NAVIGATION (LEFT) ===== -->
+        <aside class="w-full lg:w-[360px] xl:w-[420px] shrink-0">
+          <div class="w-full bg-white/95 backdrop-blur-md shadow-2xl rounded-2xl p-4 md:p-6 border border-nova/20">
+            
+            <!-- Sidebar Logo -->
+            <div class="hidden lg:flex items-center justify-center mx-auto mt-2 mb-6">
+              <img alt="NOVA Brand Logo" width="180" height="45" class="w-[200px] h-auto object-contain" src="/images/nova-logo.png" />
+            </div>
+
+            <!-- Search Box -->
+            <div class="mb-4 md:mb-6 relative">
+              <input id="sidebar-search" type="text" placeholder="Tìm kiếm: đăng nhập NOVA..." oninput="filterTabs()" class="text-base bg-slate-50 font-medium w-full border-2 border-nova/40 rounded-full px-4 py-2.5 pr-10 text-gray-800 placeholder-gray-400 focus:outline-none focus:border-nova focus:ring-2 focus:ring-nova/30 transition-all" />
+              <span class="absolute right-3.5 top-1/2 -translate-y-1/2 text-nova">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.34-4.34"/></svg>
+              </span>
+            </div>
+
+            <!-- Dynamic Interactive Navigation Tabs List -->
+            <nav class="space-y-2" id="sidebar-nav" aria-label="Danh mục hướng dẫn NOVA">
+              
+              <!-- Tab 1: Đăng ký -->
+              <button onclick="switchTab('dang-ky')" id="tab-btn-dang-ky" class="tab-btn w-full flex justify-between items-center text-left text-base md:text-lg font-bold py-3 px-4 rounded-xl text-white bg-gradient-to-r from-nova to-nova-dark shadow-md transition-all duration-200 cursor-pointer">
+                <span class="tab-title">Đăng ký tài khoản NOVA</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right tab-arrow shrink-0"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+
+              <!-- Tab 2: Đăng nhập -->
+              <button onclick="switchTab('dang-nhap')" id="tab-btn-dang-nhap" class="tab-btn w-full flex justify-between items-center text-left text-base md:text-lg font-semibold py-3 px-4 rounded-xl text-slate-700 hover:text-nova hover:bg-nova-light/50 transition-all duration-200 cursor-pointer">
+                <span class="tab-title">Hướng dẫn Đăng nhập NOVA</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right tab-arrow opacity-60 shrink-0"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+
+              <!-- Tab 3: Tải App -->
+              <button onclick="switchTab('tai-app')" id="tab-btn-tai-app" class="tab-btn w-full flex justify-between items-center text-left text-base md:text-lg font-semibold py-3 px-4 rounded-xl text-slate-700 hover:text-nova hover:bg-nova-light/50 transition-all duration-200 cursor-pointer">
+                <span class="tab-title">Tải App NOVA Mobile</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right tab-arrow opacity-60 shrink-0"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+
+              <!-- Tab 4: Nạp tiền -->
+              <button onclick="switchTab('nap-tien')" id="tab-btn-nap-tien" class="tab-btn w-full flex justify-between items-center text-left text-base md:text-lg font-semibold py-3 px-4 rounded-xl text-slate-700 hover:text-nova hover:bg-nova-light/50 transition-all duration-200 cursor-pointer">
+                <span class="tab-title">Hướng dẫn Nạp tiền NOVA</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right tab-arrow opacity-60 shrink-0"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+
+              <!-- Tab 5: Rút tiền -->
+              <button onclick="switchTab('rut-tien')" id="tab-btn-rut-tien" class="tab-btn w-full flex justify-between items-center text-left text-base md:text-lg font-semibold py-3 px-4 rounded-xl text-slate-700 hover:text-nova hover:bg-nova-light/50 transition-all duration-200 cursor-pointer">
+                <span class="tab-title">Hướng dẫn Rút tiền NOVA</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right tab-arrow opacity-60 shrink-0"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+
+              <!-- Tab 6: Khuyến Mãi -->
+              <button onclick="switchTab('khuyen-mai')" id="tab-btn-khuyen-mai" class="tab-btn w-full flex justify-between items-center text-left text-base md:text-lg font-semibold py-3 px-4 rounded-xl text-slate-700 hover:text-nova hover:bg-nova-light/50 transition-all duration-200 cursor-pointer">
+                <span class="tab-title">Tổng hợp Khuyến Mãi NOVA</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right tab-arrow opacity-60 shrink-0"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+
+            </nav>
+          </div>
+        </aside>
+
+        <!-- ===== MAIN DYNAMIC PANELS CONTENT CONTAINER (RIGHT) ===== -->
+        <section class="flex-1 flex flex-col items-center min-w-0">
+          
+          <!-- ================= PANEL 1: ĐĂNG KÝ TÀI KHOẢN (DEFAULT) ================= -->
+          <article id="panel-dang-ky" class="tab-panel w-full flex flex-col items-center">
+            <!-- Title Header (Gradient Color for Impact) -->
+            <div class="w-full flex items-center justify-between mb-6 pb-3 border-b-2 border-nova/20">
+              <div class="flex items-center gap-3 w-full justify-center md:justify-start relative">
+                <h1 class="text-xl md:text-3xl font-extrabold uppercase tracking-wide text-center md:text-left text-transparent bg-clip-text bg-gradient-to-r from-nova to-nova-accent">
+                  Hướng dẫn đăng ký tài khoản NOVA
+                </h1>
+              </div>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 w-full mb-8">
+              <!-- Step 1 -->
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 1: Đăng ký NOVA" width="240" height="450" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-1-dangky-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Step+1'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 1: TRUY CẬP LINK NOVA CHÍNH THỨC HOẶC BẤM NÚT [ĐĂNG KÝ] Ở TRANG CHỦ.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 2: Điền thông tin NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-2-dangky-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Step+2'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 2: TẠO TÊN ĐĂNG NHẬP, NHẬP MẬT KHẨU VÀ MẬT KHẨU XÁC NHẬN.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 3: Nhập thông tin thật" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-3-dangky-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Step+3'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 3: ĐIỀN HỌ TÊN THẬT (PHẢI TRÙNG VỚI TÊN TRÊN THẺ NGÂN HÀNG CỦA BẠN).
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 4: Nhập mã xác minh" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-5-dangky-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Step+4'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 4: NHẬP SỐ ĐIỆN THOẠI & MÃ XÁC NHẬN BẢO MẬT CAPTCHA.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 5 -->
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 5: Hoàn tất đăng ký NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-6-dangky-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Step+5'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 5: NHẤN [ĐĂNG KÝ NGAY] ĐỂ TRỞ THÀNH HỘI VIÊN NOVA VÀ NHẬN QUÀ.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Box -->
+            <div class="w-full flex flex-col sm:flex-row justify-center items-center gap-4 bg-white p-6 rounded-2xl shadow-lg border border-nova/30 text-center">
+              <div class="flex-1 text-center sm:text-left">
+                <h2 class="text-lg md:text-xl font-bold text-gray-800">Gia nhập vũ trụ giải trí NOVA ngay hôm nay!</h2>
+                <p class="text-sm text-gray-500 mt-1">Đăng ký NOVA dễ dàng chỉ với 1 phút để nhận quà khởi nghiệp.</p>
+              </div>
+              <!-- LINK ĐĂNG KÝ NOVA ĐƯỢC GẮN Ở ĐÂY -->
+              <a href="https://nova.com/dang-ky" title="Link đăng ký NOVA chính thức" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-gradient-to-r from-nova to-nova-dark text-white text-lg font-bold rounded-full shadow-lg hover:shadow-nova/50 hover:-translate-y-0.5 transition-all">
+                ĐĂNG KÝ NOVA NGAY
+              </a>
+            </div>
+          </article>
+
+
+          <!-- ================= PANEL 2: HƯỚNG DẪN ĐĂNG NHẬP ================= -->
+          <article id="panel-dang-nhap" class="tab-panel w-full flex flex-col items-center hidden">
+            <!-- Title Header -->
+            <div class="w-full flex items-center justify-between mb-6 pb-3 border-b-2 border-nova/20">
+              <h2 class="text-xl md:text-3xl font-extrabold uppercase tracking-wide text-center md:text-left w-full text-transparent bg-clip-text bg-gradient-to-r from-nova to-nova-accent">
+                Hướng dẫn Đăng nhập tài khoản NOVA
+              </h2>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 w-full mb-8">
+              <!-- Step 1 -->
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 1 Đăng nhập NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-1-dangnhap-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Login'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 1: TRUY CẬP LINK ĐĂNG NHẬP NOVA KHÔNG BỊ CHẶN (NOVA.COM).
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 2 Đăng nhập NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-2-dangnhap-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Login'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 2: NHẤN VÀO NÚT [ĐĂNG NHẬP] NẰM Ở GÓC PHẢI TRÊN CÙNG MÀN HÌNH.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 3 Đăng nhập NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-3-dangnhap-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Login'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 3: ĐIỀN TÊN ĐĂNG NHẬP (USERNAME) VÀ MẬT KHẨU TÀI KHOẢN NOVA.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 4 Đăng nhập NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-4-dangnhap-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Login'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 4: NHẬP MÃ XÁC THỰC VÀ BẤM [ĐĂNG NHẬP] ĐỂ BẮT ĐẦU CÁ CƯỢC.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Box -->
+            <div class="w-full flex flex-col sm:flex-row justify-center items-center gap-4 bg-white p-6 rounded-2xl shadow-lg border border-nova/30 text-center">
+              <div class="flex-1 text-center sm:text-left">
+                <h3 class="text-lg md:text-xl font-bold text-gray-800">Đã sở hữu tài khoản NOVA?</h3>
+                <p class="text-sm text-gray-500 mt-1">Đăng nhập NOVA ngay để tham gia săn tiền thưởng và hoàn trả mỗi ngày!</p>
+              </div>
+              <!-- LINK ĐĂNG NHẬP NOVA ĐƯỢC GẮN Ở ĐÂY -->
+              <a href="https://nova.com/dang-nhap" title="Link Đăng Nhập NOVA" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-gradient-to-r from-nova to-nova-dark text-white text-lg font-bold rounded-full shadow-lg hover:shadow-nova/50 transition-all">
+                ĐĂNG NHẬP NOVA NGAY
+              </a>
+            </div>
+          </article>
+
+
+          <!-- ================= PANEL 3: TẢI APP NOVA ================= -->
+          <article id="panel-tai-app" class="tab-panel w-full flex flex-col items-center hidden">
+            <!-- Title Header -->
+            <div class="w-full flex items-center justify-between mb-6 pb-3 border-b-2 border-nova/20">
+              <h2 class="text-xl md:text-3xl font-extrabold uppercase tracking-wide text-center md:text-left w-full text-transparent bg-clip-text bg-gradient-to-r from-nova to-nova-accent">
+                Hướng dẫn tải app NOVA Mobile (iOS & Android)
+              </h2>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 w-full mb-8">
+              <!-- Step 1 -->
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 1 Tải App NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-1-taiapp-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+App'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 1: TRUY CẬP TRANG CHỦ NOVA VÀ CHỌN MỤC [TẢI APP] TRÊN MÀN HÌNH.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 2 Tải App NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-2-taiapp-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+App'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 2: QUÉT MÃ QR APP NOVA HOẶC CHỌN LINK TẢI PHÙ HỢP HỆ ĐIỀU HÀNH.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 3 Tải App NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-3-taiapp-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+App'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 3: MỞ FILE VỪA TẢI VỀ VÀ CẤP QUYỀN "TIN CẬY ỨNG DỤNG" CHO NOVA.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 4 Tải App NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-4-taiapp-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+App'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 4: CÀI ĐẶT HOÀN TẤT, ĐĂNG NHẬP NOVA TRỰC TIẾP TRÊN ĐIỆN THOẠI.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Box -->
+            <div class="w-full flex flex-col sm:flex-row justify-center items-center gap-4 bg-white p-6 rounded-2xl shadow-lg border border-nova/30 text-center">
+              <div class="flex-1 text-center sm:text-left">
+                <h3 class="text-lg md:text-xl font-bold text-gray-800">Ứng dụng NOVA - Cá cược mượt mà, không lo chặn link!</h3>
+                <p class="text-sm text-gray-500 mt-1">Hệ thống bảo mật tối tân, giao diện chuẩn thiết kế hiện đại.</p>
+              </div>
+              <!-- LINK TẢI APP NOVA ĐƯỢC GẮN Ở ĐÂY -->
+              <a href="https://nova.com/tai-app" title="Tải app NOVA ngay" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-gradient-to-r from-nova to-nova-dark text-white text-lg font-bold rounded-full shadow-lg hover:shadow-nova/50 transition-all">
+                TẢI APP NOVA
+              </a>
+            </div>
+          </article>
+
+
+          <!-- ================= PANEL 4: HƯỚNG DẪN NẠP TIỀN ================= -->
+          <article id="panel-nap-tien" class="tab-panel w-full flex flex-col items-center hidden">
+            <!-- Title Header -->
+            <div class="w-full flex items-center justify-between mb-6 pb-3 border-b-2 border-nova/20">
+              <h2 class="text-xl md:text-3xl font-extrabold uppercase tracking-wide text-center md:text-left w-full text-transparent bg-clip-text bg-gradient-to-r from-nova to-nova-accent">
+                Hướng dẫn nạp tiền vào tài khoản NOVA
+              </h2>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 w-full mb-8">
+              <!-- Gắn lại ảnh placeholder tương tự -->
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 1 Nạp Tiền NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-1-nap-tien-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Deposit'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 1: ĐĂNG NHẬP TÀI KHOẢN NOVA VÀ CHỌN NÚT [NẠP TIỀN] TRÊN TRANG CHỦ.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 2 Nạp Tiền NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-2-nap-tien-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Deposit'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 2: CHỌN PHƯƠNG THỨC THANH TOÁN (NGÂN HÀNG, QR PAY, VÍ ĐIỆN TỬ).
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 3 Nạp Tiền NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-3-nap-tien-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Deposit'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 3: NHẬP SỐ TIỀN CẦN NẠP VÀ LẤY THÔNG TIN TÀI KHOẢN ĐẠI DIỆN NOVA.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 4 Nạp Tiền NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-4-nap-tien-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Deposit'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 4: THỰC HIỆN CHUYỂN KHOẢN, NOVA SẼ TỰ ĐỘNG CỘNG ĐIỂM SAU 1 - 3 PHÚT.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Box -->
+            <div class="w-full flex flex-col sm:flex-row justify-center items-center gap-4 bg-white p-6 rounded-2xl shadow-lg border border-nova/30 text-center">
+              <div class="flex-1 text-center sm:text-left">
+                <h3 class="text-lg md:text-xl font-bold text-gray-800">Nạp tiền NOVA siêu tốc cùng vô vàn ưu đãi!</h3>
+                <p class="text-sm text-gray-500 mt-1">Tân thủ NOVA nhận ngay khuyến mãi nạp lần đầu giá trị cao.</p>
+              </div>
+              <a href="https://nova.com/nap-tien" title="Link nạp tiền NOVA" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-gradient-to-r from-nova to-nova-dark text-white text-lg font-bold rounded-full shadow-lg hover:shadow-nova/50 transition-all">
+                NẠP TIỀN NOVA NGAY
+              </a>
+            </div>
+          </article>
+
+
+          <!-- ================= PANEL 5: HƯỚNG DẪN RÚT TIỀN ================= -->
+          <article id="panel-rut-tien" class="tab-panel w-full flex flex-col items-center hidden">
+            <!-- Title Header -->
+            <div class="w-full flex items-center justify-between mb-6 pb-3 border-b-2 border-nova/20">
+              <h2 class="text-xl md:text-3xl font-extrabold uppercase tracking-wide text-center md:text-left w-full text-transparent bg-clip-text bg-gradient-to-r from-nova to-nova-accent">
+                Hướng dẫn rút tiền NOVA về ngân hàng
+              </h2>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 w-full mb-8">
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 1 Rút Tiền NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-1-rut-tien-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Withdraw'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 1: TRUY CẬP MỤC [RÚT TIỀN] TRÊN GIAO DIỆN CHÍNH CỦA NOVA.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 2 Rút Tiền NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-2-rut-tien-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Withdraw'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 2: LIÊN KẾT TÀI KHOẢN NGÂN HÀNG CHÍNH CHỦ VỚI TÀI KHOẢN NOVA.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 3 Rút Tiền NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-3-rut-tien-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Withdraw'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 3: NHẬP SỐ TIỀN MUỐN RÚT VÀ MẬT KHẨU RÚT TIỀN ĐÃ THIẾT LẬP TẠI NOVA.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Bước 4 Rút Tiền NOVA" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/buoc-4-rut-tien-nova.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Withdraw'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    BƯỚC 4: NHẤN [XÁC NHẬN] VÀ CHỜ HỆ THỐNG NOVA XỬ LÝ TIỀN VỀ TRONG 3 - 5 PHÚT.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Box -->
+            <div class="w-full flex flex-col sm:flex-row justify-center items-center gap-4 bg-white p-6 rounded-2xl shadow-lg border border-nova/30 text-center">
+              <div class="flex-1 text-center sm:text-left">
+                <h3 class="text-lg md:text-xl font-bold text-gray-800">NOVA cam kết thanh toán sòng phẳng, nhanh chóng!</h3>
+                <p class="text-sm text-gray-500 mt-1">Giao dịch xanh chín, minh bạch với mạng lưới ngân hàng rộng khắp.</p>
+              </div>
+              <a href="https://nova.com/rut-tien" title="Link rút tiền NOVA" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-gradient-to-r from-nova to-nova-dark text-white text-lg font-bold rounded-full shadow-lg hover:shadow-nova/50 transition-all">
+                RÚT TIỀN NOVA NGAY
+              </a>
+            </div>
+          </article>
+
+          <!-- ================= PANEL 6: TỔNG HỢP KHUYẾN MÃI ================= -->
+          <article id="panel-khuyen-mai" class="tab-panel w-full flex flex-col items-center hidden">
+            <!-- Title Header -->
+            <div class="w-full flex items-center justify-between mb-6 pb-3 border-b-2 border-nova/20">
+              <h2 class="text-xl md:text-3xl font-extrabold uppercase tracking-wide text-center md:text-left w-full text-transparent bg-clip-text bg-gradient-to-r from-nova to-nova-accent">
+                Tổng hợp khuyến mãi HOT tại NOVA
+              </h2>
+            </div>
+
+            <!-- Promotions Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 w-full mb-8">
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Khuyến mãi NOVA 1" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/uu-dai-nova-1.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Promo'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    ƯU ĐÃI 1: TẠO TÀI KHOẢN NOVA MỚI - TẶNG TIỀN TRẢI NGHIỆM TÂN THỦ.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Khuyến mãi NOVA 2" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/uu-dai-nova-2.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Promo'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    ƯU ĐÃI 2: THƯỞNG NẠP NOVA LẦN ĐẦU TIÊN LÊN ĐẾN HÀNG TRIỆU ĐỒNG.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Khuyến mãi NOVA 3" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/uu-dai-nova-3.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Promo'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    ƯU ĐÃI 3: NOVA PHÁT HỒNG BAO MỖI NGÀY CHO THÀNH VIÊN ĐĂNG NHẬP.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col items-center w-full bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-nova/50">
+                <div class="w-full aspect-[240/450] max-h-[380px] flex items-center justify-center bg-slate-50 rounded-xl mb-4 overflow-hidden">
+                  <img alt="Khuyến mãi NOVA 4" width="240" height="450" loading="lazy" class="w-full h-full object-contain select-none hover:scale-105 transition-transform duration-300" src="/images/uu-dai-nova-4.webp" onerror="this.src='https://placehold.co/240x450/e2e8f0/7e22ce?text=NOVA+Promo'" />
+                </div>
+                <div class="w-full flex-1 flex items-center justify-center">
+                  <p class="w-full text-center text-nova-dark text-xs md:text-sm font-bold bg-nova-light/80 px-3 py-2.5 rounded-xl leading-snug border border-nova/20">
+                    ƯU ĐÃI 4: SIÊU HOÀN TRẢ KHÔNG GIỚI HẠN TẠI SẢNH THỂ THAO & CASINO NOVA.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Box -->
+            <div class="w-full flex flex-col sm:flex-row justify-center items-center gap-4 bg-white p-6 rounded-2xl shadow-lg border border-nova/30 text-center">
+              <div class="flex-1 text-center sm:text-left">
+                <h3 class="text-lg md:text-xl font-bold text-gray-800">Nhận hàng ngàn phần quà cực hấp dẫn cùng NOVA!</h3>
+                <p class="text-sm text-gray-500 mt-1">Thường xuyên truy cập khuyến mãi để không bỏ lỡ sự kiện lớn.</p>
+              </div>
+              <a href="https://nova.com/khuyen-mai" title="Xem khuyến mãi NOVA" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-gradient-to-r from-nova to-nova-dark text-white text-lg font-bold rounded-full shadow-lg hover:shadow-nova/50 transition-all">
+                XEM KHUYẾN MÃI NOVA
+              </a>
+            </div>
+          </article>
+
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ================= FOOTER SECTION ================= -->
+  <footer class="w-full bg-nova-dark text-slate-300 pt-8 pb-6 px-4 border-t-4 border-nova">
+    <div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm text-center md:text-left pb-6">
+      <div class="flex flex-col items-center md:items-start gap-3">
+        <img src="/images/nova-logo.png" alt="NOVA Logo Footer" class="h-10 w-auto brightness-200 drop-shadow-md" width="150" height="40" />
+        <p>© 2026 NOVA. All rights reserved. Nền tảng giải trí đỉnh cao - Uy tín - Xanh chín.</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4 text-slate-400 font-medium">
+        <a href="https://nova.com/dieu-khoan" class="hover:text-nova-light transition">Điều khoản sử dụng</a>
+        <span>|</span>
+        <a href="https://nova.com/bao-mat" class="hover:text-nova-light transition">Chính sách bảo mật</a>
+        <span>|</span>
+        <a href="https://nova.com/lien-he" class="hover:text-nova-light transition">Hỗ trợ CSKH 24/7</a>
+      </div>
+    </div>
+
+    <!-- ================= SEO TEXTLINK SECTION ================= -->
+   <nav aria-label="Liên kết nhanh và danh mục Jun88" class="max-w-[1440px] mx-auto pt-5 border-t border-slate-800/80">
+      <ul class="flex flex-wrap justify-center md:justify-start items-center gap-x-3 gap-y-2 text-[11px] md:text-xs text-slate-500 leading-relaxed">
+        <li><a href="https://aanbestedingai.nl/" class="hover:text-jun88 transition-colors">789BET</a></li>
+        <li aria-hidden="true" class="text-slate-700">|</li>
+        <li><a href="https://kakahoki.it.com/"  class="hover:text-jun88 transition-colors">Hi88</a></li>
+        <li aria-hidden="true" class="text-slate-700">|</li>
+        <li><a href="https://dohistory.it.com/"  class="hover:text-jun88 transition-colors">New88</a></li>
+        <li aria-hidden="true" class="text-slate-700">|</li>
+        <li><a href="https://productfeedtool.nl/" class="hover:text-jun88 transition-colors">Jun88</a></li>
+        <li aria-hidden="true" class="text-slate-700">|</li>
+        <li><a href="https://silentgpt.it.com/" class="hover:text-jun88 transition-colors">78Win</a></li>
+        <li aria-hidden="true" class="text-slate-700">|</li>
+        <li><a href="https://nepgeldkopen.nl/"  class="hover:text-jun88 transition-colors">79SODO</a></li>
+        <li aria-hidden="true" class="text-slate-700">|</li>
+        <li><a href="https://azmip.it.com/" class="hover:text-jun88 transition-colors">F8BET</a></li>
+        <li aria-hidden="true" class="text-slate-700">|</li>
+        <li><a href="https://bitfiringcasino.nl/" class="hover:text-jun88 transition-colors">79SODO</a></li>
+        <li aria-hidden="true" class="text-slate-700">|</li>
+      
+      </ul>
+    </nav>
+  </footer>
+
+  <!-- Swiper.js Script (Slider Banner Initialization) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Swiper Banner Init
+      const swiper = new Swiper('.main-swiper', {
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    });
+
+    /**
+     * Switch Active Content Tab
+     * @param {string} tabId - Unique ID suffix for tab (e.g. 'dang-ky', 'dang-nhap')
+     */
+    function switchTab(tabId) {
+      // Hide all panels
+      const allPanels = document.querySelectorAll('.tab-panel');
+      allPanels.forEach(panel => {
+        panel.classList.add('hidden');
+      });
+
+      // Show targeted panel
+      const targetPanel = document.getElementById(`panel-${tabId}`);
+      if (targetPanel) {
+        targetPanel.classList.remove('hidden');
+      }
+
+      // Reset all buttons styling
+      const allBtns = document.querySelectorAll('.tab-btn');
+      allBtns.forEach(btn => {
+        btn.className = "tab-btn w-full flex justify-between items-center text-left text-base md:text-lg font-semibold py-3 px-4 rounded-xl text-slate-700 hover:text-nova hover:bg-nova-light/50 transition-all duration-200 cursor-pointer";
+        const arrow = btn.querySelector('.tab-arrow');
+        if (arrow) arrow.classList.add('opacity-60');
+      });
+
+      // Highlight active button
+      const activeBtn = document.getElementById(`tab-btn-${tabId}`);
+      if (activeBtn) {
+        activeBtn.className = "tab-btn w-full flex justify-between items-center text-left text-base md:text-lg font-bold py-3 px-4 rounded-xl text-white bg-gradient-to-r from-nova to-nova-dark shadow-md transition-all duration-200 cursor-pointer";
+        const arrow = activeBtn.querySelector('.tab-arrow');
+        if (arrow) arrow.classList.remove('opacity-60');
+      }
+
+      // Scroll smoothly to panel top on mobile view
+      if (window.innerWidth < 1024) {
+        targetPanel?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    /**
+     * Filter Sidebar Tabs based on search input
+     */
+    function filterTabs() {
+      const searchInput = document.getElementById('sidebar-search').value.toLowerCase().trim();
+      const tabBtns = document.querySelectorAll('.tab-btn');
+
+      tabBtns.forEach(btn => {
+        const titleText = btn.querySelector('.tab-title')?.innerText.toLowerCase() || '';
+        if (titleText.includes(searchInput)) {
+          btn.style.display = 'flex';
+        } else {
+          btn.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
